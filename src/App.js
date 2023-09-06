@@ -13,11 +13,12 @@ function App() {
     <>
     <Header/>
     <Outlet/>
+   
     </>
   );
 }
 
- export const appRouter = createBrowserRouter([
+  export const appRouter = createBrowserRouter([
   {
     path:"/",
     element:<App/>,

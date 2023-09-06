@@ -9,7 +9,7 @@ const RestaurantMenu = ()=>{
    
     const {id} = useParams()
     const resInfo = useRestaurantMenu(id)
-    console.log(resInfo)
+   console.log(resInfo)
        
    
   
@@ -17,7 +17,7 @@ const RestaurantMenu = ()=>{
     if (resInfo === undefined) return   <Shimmer/>  ;
 
   const {name,cuisines} = resInfo?.data?.cards[0]?.card?.card?.info
- const {itemCards} =resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card
+ const {itemCards} =resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card
       return (
 
         <div className="p-4 m-4">
