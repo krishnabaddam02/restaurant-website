@@ -29,7 +29,7 @@ const Body = ()=>{
 
     // console.log(searchText)
 
-    return lisOfRestaurants.length === 0 ? <Shimmer/> : (
+    return lisOfRestaurants?.length === 0 ? <Shimmer/> : (
         <div>
             <div className="flex">
                 <div className="search">
@@ -47,7 +47,7 @@ const Body = ()=>{
                 }} className="text-md p-1 m-4 h-8 w-34 bg-indigo-600 rounded-md text-white">Top Rated Restauransts</button>
             </div>
             <div className="p-8 m-8 flex flex-wrap">
-            {filteredRestaurants.map((restaurant) => (<Link key={restaurant?.info.id} to={"/restaurants/"+restaurant?.info.id} ><Restcard  resData ={restaurant}/></Link>))}
+            {filteredRestaurants?.map((restaurant) => (<Link key={restaurant?.info.id} to={"/restaurants/"+restaurant?.info.id} ><Restcard  resData ={restaurant}/></Link>))}
             </div>
         </div>
     )
