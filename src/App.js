@@ -33,7 +33,7 @@ function App() {
       },
       {
         path:"/contact",
-        element:<Contact/>
+        element:<Contact showContact ={true} onClick={()=>console.log("clicked")}/>
       },
       {
         path:"/restaurants/:id",
